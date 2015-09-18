@@ -7,7 +7,7 @@ if [ "$1" = "config" ]; then
   echo "graph_vlabel $type_upper"
   echo "$type.label $type"
 else
-  bcpath="/usr/local/bin/bitcoind"
+  bcpath="/usr/local/bin/bitcoin-cli"
   if [ "$type" = "connections" ]; then
     value=`$bcpath getconnectioncount`
   elif [ "$type" = "blocks" ]; then
