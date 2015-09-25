@@ -14,6 +14,10 @@ else
     value=`$bcpath getblockcount`
   elif [ "$type" = "difficulty" ]; then
     value=`$bcpath getdifficulty`
+  elif [ "$type" = "mempoolbytes" ]; then
+    value=`$bcpath getmempoolinfo | grep -Po '\"bytes\".*' | grep -Po '[0-9]*'`
+  elif [ "$type" = "mempoolcount" ]; then
+    value=`$bcpath getmempoolinfo | grep -Po '\"size\".*' | grep -Po '[0-9]*'`
   fi
   echo "$type.value $value"
 fi
