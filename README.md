@@ -20,5 +20,11 @@ Block count:
 Difficulty:  
 `$ ln -s /usr/share/munin/plugins/bitcoind_ /etc/munin/plugins/bitcoind_difficulty`
 
+Mempool size:  
+`$ ln -s /usr/share/munin/plugins/bitcoind_ /etc/munin/plugins/bitcoind_mempoolcount`
+
+Mempool size in Bytes:  
+`$ ln -s /usr/share/munin/plugins/bitcoind_ /etc/munin/plugins/bitcoind_mempoolbytes`
+
 Don't forget to restart Munin after changing plugins:  
 `$ service munin-node restart`
