@@ -1,5 +1,5 @@
 ### Install Plugin
-`$ curl -o /usr/share/munin/plugins/bitcoind_ https://raw.githubusercontent.com/MorbZ/munin-bitcoind/master/bitcoind_`  
+`$ curl -o /usr/share/munin/plugins/bitcoind_ https://raw.githubusercontent.com/petrsobotka/munin-bitcoind/master/bitcoind_`  
 `$ chmod +x /usr/share/munin/plugins/bitcoind_`  
 
 Create file `/etc/munin/plugin-conf.d/bitcoind` with contents:
