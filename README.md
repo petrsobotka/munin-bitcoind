@@ -7,8 +7,8 @@ Create file `/etc/munin/plugin-conf.d/bitcoind` with contents:
     [bitcoind_*]
     user root
 
-`$ mkdir /.bitcoin`  
-`$ cp ~/.bitcoin/bitcoin.conf /.bitcoin`  
+`$ mkdir /root/.bitcoin`  
+`$ cp ~/.bitcoin/bitcoin.conf /root/.bitcoin`  
 
 ### Setup Graphs
 Number of connections:  
